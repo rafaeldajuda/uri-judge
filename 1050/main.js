@@ -1,14 +1,31 @@
 var input = require('fs').readFileSync('../stdin', 'utf-8');
+var ddd = input.split("\n");
 
-var dici_ddd = {
-    61: "Brasilia",
-    71: "Salvador",
-    11: "Sao Paulo",
-    21: "Rio de Janeiro",
-    32: "Juiz de Fora",
-    19: "Campinas",
-    27: "Vitoria",
-    31: "Belo Horizonte"
+switch(ddd[0]){
+    case "61":
+        console.log("Brasilia");
+        break;
+    case "71":
+        console.log("Salvador");
+        break;
+    case "11":
+        console.log("Sao Paulo");
+        break;
+    case "21":
+        console.log("Rio de Janeiro");
+        break;
+    case "32":
+        console.log("Juiz de Fora");
+        break;
+    case "19":
+        console.log("Campinas");
+        break;
+    case "27":
+        console.log("Vitoria");
+        break;
+    case "32":
+        console.log("Belo Horizonte");
+        break;
+    default:
+        console.log("DDD nao cadastrado");
 }
-
-console.log(dici_ddd[input] == undefined?"DDD nao cadastrado":dici_ddd[input]);
